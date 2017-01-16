@@ -55,7 +55,7 @@
                     	<h1><img src="images/ShoesCoSmall.png" alt="logo"></h1>
                     </a>
                     
-                </div>
+                </div> 
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
