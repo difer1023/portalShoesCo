@@ -106,7 +106,7 @@
             </div>
         </header>
         <!--/#header-->
-        <div class="container-fluid">
+        <div class="row">
             <section id="home-slider">
                 <div class="container">
                     <div class="row">
@@ -134,30 +134,8 @@
                     <!--<div class="col-sm-12 text-center bottom-separator">
                         <img src="images/home/under.png" class="img-responsive inline" alt="">
                     </div>-->
+                    
                     <div class="col-md-4 col-sm-6">
-                        <div class="testimonial bottom">
-                            <h2>Testimonial</h2>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#"><img src="images/home/profile1.png" alt=""></a>
-                                </div>
-                                <div class="media-body">
-                                    <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
-                                    <h3><a href="#">- Jhon Kalis</a></h3>
-                                </div>
-                            </div>
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                                </div>
-                                <div class="media-body">
-                                    <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                    <h3><a href="">- Abraham Josef</a></h3>
-                                </div>
-                            </div>   
-                        </div> 
-                    </div>
-                    <div class="col-md-3 col-sm-6">
                         <div class="contact-info bottom">
                             <h2>Contacto</h2>
                             <address>
@@ -167,6 +145,12 @@
                                 Fax: +57 (031) 551 72 53 <br> 
                             </address>
 
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact-info bottom">
+                            
                             <h2>Dirección</h2>
                             <address>
                                 Cra 24G # 20-04 sur <br> 
@@ -176,8 +160,16 @@
                             </address>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="contact-form bottom">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact-info bottom">
+                            <h2>Declaracion de conformidad</h2>
+                            <p>Este sitio cumple con el nivel de conformidad AA 
+                                acorde con el estandar WCAG para sitios que implementan 
+                                mejoras de accesibilidad web.</p>
+
+                            
+                        </div>
+                        <!--<div class="contact-form bottom">
                             <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                                 <div class="form-group">
@@ -193,12 +185,12 @@
                                     <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
                                 </div>
                             </form>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="col-sm-12">
                         <div class="copyright-text text-center">
-                            <p>&copy; Your Company 2014. All Rights Reserved.</p>
-                            <p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>
+                            <p>&copy; Shoes & Co Footwear 2017. Derechos reservados.</p>
+                            <p>Diseñado por <a href="#">Diego Galeano, Laura Prada</a></p>
                         </div>
                     </div>
                 </div>
