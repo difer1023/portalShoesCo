@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Home | Triangle</title>
+        <title>Home | Shoes&Co</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet"> 
@@ -31,7 +31,7 @@
                     <div class="col-sm-12 overflow">
                         <div class="social-icons pull-right">
                             <ul class="nav nav-pills">
-                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href=""><i class="fa fa-twitter"></i></a></li>
                                 <li><a href=""><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href=""><i class="fa fa-dribbble"></i></a></li>
@@ -52,17 +52,17 @@
                         </button>
 
                         <a class="navbar-brand" href="index.html">
-                            <h1><img src="images/ShoesCoSmall.png" alt="logo"></h1>
+                            <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de la empresa"></h1>
                         </a>
 
                     </div> 
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="active"><a href="index.html">Home</a></li>
-                            <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                            <li class="dropdown"><a href="#">Sobre nosotros <i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="aboutus.html">About</a></li>
-                                    <li><a href="aboutus2.html">About 2</a></li>
+                                    <li><a href="aboutus2.php">About 2</a></li>
                                     <li><a href="service.html">Services</a></li>
                                     <li><a href="pricing.html">Pricing</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
@@ -114,7 +114,7 @@
                             <div class="slide-text">
                                 <h1>We Are Creative Nerds</h1>
                                 <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                                <a href="#" class="btn btn-common">SIGN UP</a>
+                                <a href="#" class="btn btn-common">Suscríbete</a>
                             </div>
                             <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
                             <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
@@ -159,37 +159,38 @@
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="contact-info bottom">
-                            <h2>Contacts</h2>
+                            <h2>Contacto</h2>
                             <address>
-                                E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
-                                Phone: +1 (123) 456 7890 <br> 
-                                Fax: +1 (123) 456 7891 <br> 
+                                E-mail: <a href="mailto:shoesco.footwear@gmail.com"
+                                        >shoesco.footwear@gmail.com</a> <br> 
+                                Phone: +57 (031) 551 72 53 <br> 
+                                Fax: +57 (031) 551 72 53 <br> 
                             </address>
 
-                            <h2>Address</h2>
+                            <h2>Dirección</h2>
                             <address>
-                                Unit C2, St.Vincent's Trading Est., <br> 
-                                Feeder Road, <br> 
-                                Bristol, BS2 0UY <br> 
-                                United Kingdom <br> 
+                                Cra 24G # 20-04 sur <br> 
+                                Barrio Restrepo <br> 
+                                Bogotá, D.C. <br> 
+                                Colombia <br> 
                             </address>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12">
                         <div class="contact-form bottom">
-                            <h2>Send a message</h2>
+                            <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+                                    <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
+                                    <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
                                 </div>                        
                                 <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-submit" value="Submit">
+                                    <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
                                 </div>
                             </form>
                         </div>
