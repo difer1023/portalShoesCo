@@ -51,21 +51,24 @@
                             <span class="icon-bar"></span>
                         </button>
 
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de la empresa"></h1>
                         </a>
 
                     </div> 
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.html">Home</a></li>
-                            <li class="dropdown"><a href="#">Sobre nosotros <i class="fa fa-angle-down"></i></a>
+                            <li class="active"><a href="index.php">Home</a></li>
+                            <li><a href="portfoliotwo.php">Catálogo</a></li>
+                            <li><a href="aboutus2.php">Sobre nosotros</a></li>
+                            <li><a href="contact.php">Contacto</a></li>
+                            <!--<li class="dropdown"><a href="#">Sobre nosotros <i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="aboutus.html">About</a></li>
                                     <li><a href="aboutus2.php">About 2</a></li>
                                     <li><a href="service.html">Services</a></li>
                                     <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="contact.html">Contact us</a></li>
+                                    <li><a href="contact.php">Contact us</a></li>
                                     <li><a href="contact2.html">Contact us 2</a></li>
                                     <li><a href="404.html">404 error</a></li>
                                     <li><a href="coming-soon.html">Coming Soon</a></li>
@@ -86,12 +89,12 @@
                                     <li><a href="portfolio.html">Portfolio Default</a></li>
                                     <li><a href="portfoliofour.html">Isotope 3 Columns + Right Sidebar</a></li>
                                     <li><a href="portfolioone.html">3 Columns + Right Sidebar</a></li>
-                                    <li><a href="portfoliotwo.html">3 Columns + Left Sidebar</a></li>
+                                    <li><a href="portfoliotwo.php">3 Columns + Left Sidebar</a></li>
                                     <li><a href="portfoliothree.html">2 Columns</a></li>
                                     <li><a href="portfolio-details.html">Portfolio Details</a></li>
                                 </ul>
                             </li>                         
-                            <li><a href="shortcodes.html ">Shortcodes</a></li>                    
+                            <li><a href="shortcodes.html ">Shortcodes</a></li>-->                    
                         </ul>
                     </div>
                     <div class="search">
@@ -162,13 +165,21 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="contact-info bottom">
-                            <h2>Declaracion de conformidad</h2>
-                            <p>Este sitio cumple con el nivel de conformidad AA 
-                                acorde con el estandar WCAG para sitios que implementan 
-                                mejoras de accesibilidad web.</p>
-
-                            
+                            <h2>Declaración de conformidad</h2>
+                            <p>Este sitio web cumple con el nivel de conformidad AA 
+                                de acuerdo a la declaración de la norma WCAG 2.0 de 
+                                la WAI (Web Accesibility Initiative).</p>   
+                            <div>
+                            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+                            title="Explicación del Nivel Doble-A de Conformidad">
+                            <img height="32" width="88" 
+                            src="http://www.w3.org/WAI/wcag1AA-blue"
+                            alt="Icono de conformidad con el Nivel Doble-A, 
+                            de las Directrices de Accesibilidad para el 
+                            Contenido Web 1.0 del W3C-WAI"></a>
                         </div>
+                        </div>
+                   
                         <!--<div class="contact-form bottom">
                             <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
