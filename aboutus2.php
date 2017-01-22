@@ -162,7 +162,6 @@
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
                                         >shoesco.footwear@gmail.com</a> <br> 
                                 Phone: +57 (031) 551 72 53 <br> 
-                                Fax: +57 (031) 551 72 53 <br> 
                             </address>
 
                             
