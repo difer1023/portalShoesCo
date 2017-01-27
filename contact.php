@@ -98,7 +98,7 @@
             </div>
         </section> <!--/#map-section-->        
         <section>
-            <div class="page-breadcrumb
+            <div class="page-breadcrumb">
                  <div class="vertical-center sun">
                  <div class="container">
                     <div class="row">
@@ -129,7 +129,7 @@
                     </div>-->
 
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom"> 
                             <h2>Contacto</h2>
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
