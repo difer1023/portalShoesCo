@@ -128,7 +128,7 @@
                         <img src="images/home/under.png" class="img-responsive inline" alt="">
                     </div>-->
 
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6"> 
                         <div class="contact-info bottom"> 
                             <h2>Contacto</h2>
                             <address>
