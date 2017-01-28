@@ -94,32 +94,36 @@
 
         <section id="map-section">
             <div class="container">
-                <div id="gmap"></div>
-            </div>
-        </section> <!--/#map-section-->        
-        <section>
-            <div class="page-breadcrumb">
-                 <div class="vertical-center sun">
-                 <div class="container">
-                    <div class="row">
-                        <h2>Envía tu mensaje</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                            </div>                        
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
-                            </div>
-                        </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="gmap"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="page-breadcrumb">
+
+                            
+
+                                <h2>Envía tu mensaje</h2>
+                                <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                                    </div>                        
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
+                                    </div>
+                                </form>
+
+                            
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <footer id="footer">
             <div class="container">
