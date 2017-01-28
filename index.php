@@ -26,7 +26,21 @@
 
     <body>
         <header id="header">      
-            
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 overflow">
+                        <div class="social-icons pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
             <div class="navbar navbar-inverse" role="banner">
                 <div class="container">
                     <div class="navbar-header">
@@ -44,10 +58,10 @@
                     </div> 
                     <div class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="index.php">Inicio</a></li>
-                            <li><a href="catalogo.php">Catálogo</a></li>
-                            <li><a href="sobrenosotros.php">Sobre nosotros</a></li>
-                            <li><a href="contacto.php">Contacto</a></li>
+                            <li class="active"><a href="index.php">Home</a></li>
+                            <li><a href="portfoliotwo.php">Catálogo</a></li>
+                            <li><a href="aboutus2.php">Sobre nosotros</a></li>
+                            <li><a href="contact.php">Contacto</a></li>
                             <!--<li class="dropdown"><a href="#">Sobre nosotros <i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">
                                     <li><a href="aboutus.html">About</a></li>
@@ -130,19 +144,9 @@
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
                                         >shoesco.footwear@gmail.com</a> <br> 
-                                Teléfono: +57 (031) 551 72 53 <br>
+                                Phone: +57 (031) 551 72 53 <br>
                             </address>
-                                <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 overflow">
-                        <div class="social-icons pull-left">
-                            <ul class="nav nav-pills">
-                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+
                             
                         </div>
                     </div>

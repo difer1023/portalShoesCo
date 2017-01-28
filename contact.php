@@ -58,10 +58,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.php">Inicio</a></li>
-                        <li><a href="catalogo.php">Catálogo</a></li>
-                        <li><a href="sobrenosotros.php">Sobre nosotros</a></li>
-                        <li class="active"><a href="contacto.php">Contacto</a></li>                 
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="portfoliotwo.php">Catálogo</a></li>
+                        <li><a href="aboutus2.php">Sobre nosotros</a></li>
+                        <li class="active"><a href="contact.php">Contacto</a></li>                 
                     </ul>
                 </div>
                 <div class="search">
@@ -91,34 +91,31 @@
         </div>
    </section>
     <!--/#action-->
-    
-    
+
     <section id="map-section">
         <div class="container">
             <div id="gmap"></div>
-            <div class="contact-info">
-                <div class="contact-form bottom">
+        </div>
+    </section> <!--/#map-section-->        
+    
+    <div class="contact-form bottom">
                             <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                                 <div class="form-group">
-                                    <input type="text" required="required" name="name" class="form-control" required="required" placeholder="Nombre">
+                                    <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" required="required" name="email" class="form-control" required="required" placeholder="E-mail">
+                                    <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" required="required" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
                                 </div>                        
                                 <div class="form-group">
                                     <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
                                 </div>
                             </form>
                         </div>
-            </div>
-        </div>
-    </section> <!--/#map-section--> 
 
-   
     <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -132,7 +129,7 @@
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
                                         >shoesco.footwear@gmail.com</a> <br> 
-                                Teléfono: +57 (031) 551 72 53 <br> 
+                                Phone: +57 (031) 551 72 53 <br> 
                             </address>
 
                             
