@@ -34,8 +34,6 @@
                             <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><i class="fa fa-facebook"></i></a></li>
                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div> 
                 </div>
@@ -52,16 +50,16 @@
                     </button>
 
                     <a class="navbar-brand" href="index.php">
-                        <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de la empresa"></h1>
+                        <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de Shoes&Co"></h1>
                     </a>
                     
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="portfoliotwo.php">Catálogo</a></li>
-                        <li class="active"><a href="aboutus2.php">Sobre nosotros</a></li>
-                        <li><a href="contact.php">Contacto</a></li>                          
+                        <li><a href="catalogo.php">Catálogo</a></li>
+                        <li class="active"><a href="sobrenosotros.php">Sobre nosotros</a></li>
+                        <li><a href="contacto.php">Contacto</a></li>                          
                     </ul>
                 </div>
                 <div class="search">
@@ -113,7 +111,7 @@
                 <div class="col-sm-6 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
+                            <img src="images/home/icon1.png" alt="Imagen alusiva a la misión de la empresa">
                         </div>
                         <h2>Misión</h2>
                         <p>Somos una compañía productora de calzado, que tiene como objetivo manufacturar un producto de óptima calidad, 
@@ -126,7 +124,7 @@
                 <div class="col-sm-6 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
+                            <img src="images/home/icon2.png" alt="Imagen alusiva a la visión de la empresa">
                         </div>
                         <h2>Visión</h2>
                         <p>Para el año 2020 nos consolidaremos como una de las compañías más reconocidas en la industria del 
@@ -161,7 +159,7 @@
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
                                         >shoesco.footwear@gmail.com</a> <br> 
-                                Phone: +57 (031) 551 72 53 <br> 
+                                Teléfono: +57 (031) 551 72 53 <br> 
                             </address>
 
                             
