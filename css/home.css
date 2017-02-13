@@ -1,0 +1,104 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-feb-2017, 14:54:12
+    Author     : Difer
+*/
+
+.slider-hill{
+    width: 40%;
+}
+
+#home-slider-right {
+    background: url(../images/home/slider-bg.png) 0 100% repeat-x;
+    position: relative;
+}
+
+#home-slider-right .main-slider {
+    position: relative;
+    height: 450px;
+}
+
+#home-slider-right .slide-text{
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    width: 450px;
+}
+
+#home-slider-right .slider-hill {
+    position: absolute;
+    right: 700px;
+    bottom: 0;
+}
+#home-slider-right .slider-house {
+    position: absolute;
+    right: 110px;
+    bottom: -30px;
+}
+
+#home-slider .slider-sun {
+    position: absolute;
+    right: 365px;
+    bottom: 100px;
+}
+
+#home-slider-right h1{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+#home-slider-right .btn-common {
+    margin-top: 20px;
+}
+
+#home-slider-right .preloader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -30px;
+    right: 0;
+    background: #fafafa;
+    text-align: center;
+}
+
+#home-slider-right .preloader > i {
+    font-size: 48px;
+    height: 48px;
+    line-height: 48px;
+    color: #00aeef;
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    top: 50%;
+    margin-top: -24px;
+}
+
+@media only screen and (max-width : 992px){
+    #home-slider-right {
+        margin: 50px 20px;
+    }
+
+    #home-slider-right .main-slider {
+        height: 500px;
+    }
+
+    #home-slider-right .slide-text {
+        top: -69px;
+        width: 100%;
+        text-align: center;
+        left: 0px;
+    }
+
+
+    #home-slider-right .slider-hill {
+        right: 50%;
+        margin-right: -200px;
+        width: 102%;
+
+    }
+
+}

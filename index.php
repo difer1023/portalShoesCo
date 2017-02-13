@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>Home | Shoes&Co</title>
+        <title>Inicio | Shoes&Co</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/animate.min.css" rel="stylesheet"> 
         <link href="css/lightbox.css" rel="stylesheet"> 
         <link href="css/main.css" rel="stylesheet">
         <link href="css/responsive.css" rel="stylesheet">
-
+        <link href="css/home.css" rel="stylesheet">
         <!--[if lt IE 9]>
                 <script src="js/html5shiv.js"></script>
                 <script src="js/respond.min.js"></script>
@@ -22,6 +22,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+        
     </head><!--/head-->
 
     <body>
@@ -52,7 +53,7 @@
                         </button>
 
                         <a class="navbar-brand" href="index.php">
-                            <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de Shoes&Co"></h1>
+                            <h1><img class="logo" src="images/ShoesCoSmall.png" alt="Logotipo de Shoes&Co"></h1>
                         </a>
 
                     </div> 
@@ -115,21 +116,45 @@
                     <div class="row">
                         <div class="main-slider">
                             <div class="slide-text">
-                                <h1>We Are Creative Nerds</h1>
-                                <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                                <a href="#" class="btn btn-common">Suscríbete</a>
+                                <h1>El arte de hacer calzado</h1>
+                                <p>Nuestro producto tiene el sello especial de la mano de nuestros artesanos, que siempre piensan en la comodidad y la calidad que ofrecemos a nuestros clientes.</p>
+                                <!--<a href="#" class="btn btn-common">Suscríbete</a>-->
                             </div>
-                            <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                            <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                            <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                            <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                            <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+
+                            <img src="images/home/manufactura-1.jpg" class="slider-hill" alt="slider image">
+
+<!--<img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+<img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+<img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+<img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">-->
                         </div>
                     </div>
                 </div>
                 <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
             </section>
             <!--/#home-slider-->
+            <section id="home-slider-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="main-slider">
+
+                            <img src="images/home/disenador-calzado.jpg" class="slider-hill" alt="slider image">
+
+                            <div class="slide-text">
+                                <h1>Lo mejor en diseño</h1>
+                                <p>Pensando en la mujer contemporanea, nuestro equipo de diseño, crea colecciones innovadoras tomando como referencia las ultimas tendencias a nivel mundial.</p>
+                                <!--<a href="#" class="btn btn-common">Suscríbete</a>-->
+                            </div>
+
+<!--<img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+<img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+<img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+<img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">-->
+                        </div>
+                    </div>
+                </div>
+                <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+            </section>
         </div>
         <footer id="footer">
             <div class="container">
@@ -137,22 +162,22 @@
                     <!--<div class="col-sm-12 text-center bottom-separator">
                         <img src="images/home/under.png" class="img-responsive inline" alt="">
                     </div>-->
-                    
+
                     <div class="col-md-4 col-sm-6">
                         <div class="contact-info bottom">
                             <h2>Contacto</h2>
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
-                                        >shoesco.footwear@gmail.com</a> <br> 
+                                           >shoesco.footwear@gmail.com</a> <br> 
                                 Teléfono: +57 (031) 551 72 53 <br>
                             </address>
 
-                            
+
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="contact-info bottom">
-                            
+
                             <h2>Dirección</h2>
                             <address>
                                 Cra 24G # 20-04 sur <br> 
@@ -169,16 +194,16 @@
                                 de acuerdo a la declaración de la norma WCAG 2.0 de 
                                 la WAI (Web Accesibility Initiative).</p>   
                             <div>
-                            <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
-                            title="Explicación del Nivel Doble-A de Conformidad">
-                            <img height="32" width="88" 
-                            src="http://www.w3.org/WAI/wcag1AA-blue"
-                            alt="Icono de conformidad con el Nivel Doble-A, 
-                            de las Directrices de Accesibilidad para el 
-                            Contenido Web 1.0 del W3C-WAI"></a>
+                                <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+                                   title="Explicación del Nivel Doble-A de Conformidad">
+                                    <img height="32" width="88" 
+                                         src="http://www.w3.org/WAI/wcag1AA-blue"
+                                         alt="Icono de conformidad con el Nivel Doble-A, 
+                                         de las Directrices de Accesibilidad para el 
+                                         Contenido Web 1.0 del W3C-WAI"></a>
+                            </div>
                         </div>
-                        </div>
-                   
+
                         <!--<div class="contact-form bottom">
                             <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">

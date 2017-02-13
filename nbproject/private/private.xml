@@ -4,9 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/xampp/htdocs/portalShoesCo/catalogo.php</file>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/contacto.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/dao/CategoriaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/dao/ColeccionDAO.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/css/main.css</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/css/responsive.css</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/js/main.js</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/js/catalogo.js</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/css/home.css</file>
             <file>file:/C:/xampp/htdocs/portalShoesCo/sobrenosotros.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/dao/ProductoDAO.php</file>
             <file>file:/C:/xampp/htdocs/portalShoesCo/index.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/controladores/CtrlProductos.php</file>
         </group>
     </open-files>
 </project-private>

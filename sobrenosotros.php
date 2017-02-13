@@ -50,7 +50,7 @@
                     </button>
 
                     <a class="navbar-brand" href="index.php">
-                        <h1><img src="images/ShoesCoSmall.png" alt="Logotipo de Shoes&Co"></h1>
+                        <h1><img class="logo" src="images/ShoesCoSmall.png" alt="Logotipo de Shoes&Co"></h1>
                     </a>
                     
                 </div>
