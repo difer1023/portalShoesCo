@@ -21,7 +21,7 @@ $filterCheckboxes.on( 'change', function() {
   
   $.ajax({
                 type: "POST",
-                url: "../portalShoesCo/controladores/CtrlFiltrosProductos.php",
+                url: "../controladores/CtrlFiltrosProductos.php",
                 async: false,
                 data: {
                     filtros:JSON.stringify(selectedFilters)
@@ -29,22 +29,23 @@ $filterCheckboxes.on( 'change', function() {
             })
                     .done(function(data) {
                         var productos = $.parseJSON(data);
-                        html = "";
+                        console.log(data,productos);
+                        html = '';
                         for (i = 0; i < productos.length; i++) {
-                           html += "<div class=\"col-sm-4 col-lg-4 col-md-4\">"
-                                   +"<div class=\"thumbnail\">"
-                                   +"<img src=\"" +productos[i].rutaImagen+ "\"<div class=\"caption\">"
-                                   +"<h4><a href=\"#\">"+productos[i].nombre+ "</a></h4>"
-                                   +"<p>" +productos[i].descripcion+ "</a>.</p>"
-                                   +"</div>"
-                                   +" </div>";
+                           html += '<div class="col-sm-4 col-lg-4 col-md-4">'
+                                   +'<div class="thumbnail">'
+                                   +'<img src="../../../contenido/' +productos[i].c_ruta_imagen+'"<div class="caption">'
+                                   +'<h4><a href=\"#\">'+productos[i].c_nombre+ '</a></h4>'
+                                   +'<p>' +productos[i].c_descripcion+ '</a>.</p>'
+                                   +'</div>'
+                                   +' </div>';
                             
                         }
 
                         $('#divProductos').html(html);
                     })
                     .fail(function() {
-                        alert('Error al cargar productos.')
+                        alert('Error al cargar productos.');
                     });
   
 //alert(JSON.stringify(selectedFilters));
