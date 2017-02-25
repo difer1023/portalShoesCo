@@ -1,4 +1,3 @@
-<?php include '../portalShoesCo/dto/producto.php'; ?>
 <?php include '../portalShoesCo/dao/ProductoDAO.php'; ?>
 <?php include '../portalShoesCo/dto/coleccion.php'; ?>
 <?php include '../portalShoesCo/dao/ColeccionDAO.php'; ?>

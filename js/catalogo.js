@@ -16,9 +16,36 @@ $filterCheckboxes.on( 'change', function() {
     if ( ! selectedFilters.hasOwnProperty( this.name ) ) {
       selectedFilters[ this.name ] = [];
     }
-
     selectedFilters[ this.name ].push( this.value );
-    alert(JSON.stringify(selectedFilters));
   } );
+  
+  $.ajax({
+                type: "POST",
+                url: "../portalShoesCo/controladores/CtrlFiltrosProductos.php",
+                async: false,
+                data: {
+                    filtros:JSON.stringify(selectedFilters)
+                }
+            })
+                    .done(function(data) {
+                        var productos = $.parseJSON(data);
+                        html = "";
+                        for (i = 0; i < productos.length; i++) {
+                           html += "<div class=\"col-sm-4 col-lg-4 col-md-4\">"
+                                   +"<div class=\"thumbnail\">"
+                                   +"<img src=\"" +productos[i].rutaImagen+ "\"<div class=\"caption\">"
+                                   +"<h4><a href=\"#\">"+productos[i].nombre+ "</a></h4>"
+                                   +"<p>" +productos[i].descripcion+ "</a>.</p>"
+                                   +"</div>"
+                                   +" </div>";
+                            
+                        }
 
+                        $('#divProductos').html(html);
+                    })
+                    .fail(function() {
+                        alert('Error al cargar productos.')
+                    });
+  
+//alert(JSON.stringify(selectedFilters));
 } );
