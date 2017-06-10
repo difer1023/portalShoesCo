@@ -2,12 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/catalogo.php</file>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/js/catalogo.js</file>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/dao/ProductoDAO.php</file>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/controladores/CtrlProductos.php</file>
-            <file>file:/C:/xampp/htdocs/portalShoesCo/controladores/CtrlFiltrosProductos.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

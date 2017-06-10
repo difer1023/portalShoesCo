@@ -5,13 +5,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+include_once 'conexion.php';
+include_once '../../persistencia/dto/coleccion.php';
 /**
- * Description of CategoriaDAO
+ * Description of ColeccionDAO
  *
  * @author Difer
  */
-class CategoriaDAO {
+class ColeccionDAO {
     
     private $conexion=null;
 
@@ -20,21 +21,22 @@ class CategoriaDAO {
     }
 
     public function consultarTodos() {
-        $consulta = "select * from categoria;";
+        $consulta = "select * from coleccion;";
         $result = mysql_query($consulta, $this->conexion->getLink());
         if (!$result) {
             die('Ocurrio un error al obtener los valores de la base de datos: ' . mysql_error());
         }
-        $categorias=array();
+        $colecciones=array();
         while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-            $categoria=new categoria();
-            $categoria->setCodigo($row['i_codigo']);
-            $categoria->setNombre($row['c_nombre']);
-            $categorias []= $categoria;
+            $coleccion=new coleccion();
+            $coleccion->setCodigo($row['i_codigo']);
+            $coleccion->setNombre($row['c_nombre']);
+            
+            $colecciones []= $coleccion;
         }
         echo "</table></center>";
         mysql_close($this->conexion->getLink());
-        return $categorias;
+        return $colecciones;
     }
     //put your code here
 }

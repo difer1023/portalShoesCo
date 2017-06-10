@@ -1,8 +1,3 @@
-<?php include '../portalShoesCo/dao/ProductoDAO.php'; ?>
-<?php include '../portalShoesCo/dto/coleccion.php'; ?>
-<?php include '../portalShoesCo/dao/ColeccionDAO.php'; ?>
-<?php include '../portalShoesCo/dto/categoria.php'; ?>
-<?php include '../portalShoesCo/dao/CategoriaDAO.php'; ?>
 <?php
 
 /*
@@ -10,7 +5,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+include_once '../../persistencia/dao/ProductoDAO.php';
+//include_once '../../persistencia/dto/coleccion.php';
+include_once '../../persistencia/dao/ColeccionDAO.php';
+//include_once '../../persistencia/dto/categoria.php';
+include_once '../../persistencia/dao/CategoriaDAO.php';
 /**
  * Description of CtrlProductos
  *
