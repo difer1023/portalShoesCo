@@ -13,12 +13,8 @@
         error_reporting(E_ALL);
         ini_set('display_errors', '1');
         ?>
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>
-                <script src="js/respond.min.js"></script>
-        <![endif]-->       
-
-    </head><!--/head-->
+        
+    </head>
 
     <body>
         <header id="header">      
@@ -27,9 +23,9 @@
                     <div class="col-sm-12 overflow">
                         <div class="social-icons pull-right">
                             <ul class="nav nav-pills">
-                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><span class="sr-only">Enlace a la página de Facebook</span><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/"><span class="sr-only">Enlace a la página de Twitter</span><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/about?hl=es"><span class="sr-only">Enlace a la página de Google Plus</span><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div> 
                     </div>
@@ -57,14 +53,6 @@
                             <li><a href="../../../componentes/sobrenosotros/vista/sobrenosotros.php">Sobre nosotros</a></li>
                             <li class="active"><a href="../../../componentes/contacto/vista/contacto.php">Contacto</a></li>                 
                         </ul>
-                    </div>
-                    <div class="search">
-                        <form role="form">
-                            <i class="fa fa-search"></i>
-                            <div class="field-toggle">
-                                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -94,27 +82,24 @@
                     </div>
                     <div class="col-md-6">
                         <div class="page-breadcrumb">
-
-
-
                             <h2>Envía tu mensaje</h2>
                             <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
+                                    <input type="text" name="name" id="name" class="form-control" required="required" placeholder="Nombre" aria-label="Nombre">
+                                    <label for="name" class="sr-only">Nombre</label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
+                                    <input type="email" name="email" id="email" class="form-control" required="required" placeholder="E-mail" aria-label="E-mail">
+                                    <label for="email" class="sr-only">E-mail</label>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                                </div>                        
+                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje" aria-label="Mensaje"></textarea>
+                                    <label for="message" class="sr-only">Mensaje</label>
+                                </div>            
                                 <div class="form-group">
                                     <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
                                 </div>
                             </form>
-
-
-
                         </div>
                     </div>
                 </div>
@@ -155,30 +140,21 @@
                             <h2>Declaración de conformidad</h2>
                             <p>Este sitio web cumple con el nivel de conformidad AA 
                                 de acuerdo a la declaración de la norma WCAG 2.0 de 
-                                la WAI (Web Accesibility Initiative).</p>    
+                                la WAI (Web Accesibility Initiative).</p>  
+                            <div>
+                                <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+                                   title="Explicación del Nivel Doble-A de Conformidad">
+                                    <img height="32" width="88" 
+                                         src="http://www.w3.org/WAI/wcag1AA-blue"
+                                         alt="Icono de conformidad con el Nivel Doble-A"></a>
+                            </div>
                         </div>
-                        <!--<div class="contact-form bottom">
-                            <h2>Envía tu mensaje</h2>
-                            <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                                </div>                        
-                                <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
-                                </div>
-                            </form>
-                        </div>-->
+                       
                     </div>
                     <div class="col-sm-12">
                         <div class="copyright-text text-center">
                             <p>&copy; Shoes & Co Footwear 2017. Derechos reservados.</p>
-                            <p>Diseñado por <a href="#">Diego Galeano, Laura Prada</a></p>
+                            <p>Desarrollado por <span>Diego Galeano, Laura Prada</span></p>
                         </div>
                     </div>
                 </div>

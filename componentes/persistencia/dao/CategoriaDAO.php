@@ -33,7 +33,7 @@ class CategoriaDAO {
             $categoria->setNombre($row['c_nombre']);
             $categorias []= $categoria;
         }
-        echo "</table></center>";
+        //echo "</table></center>";
         mysql_close($this->conexion->getLink());
         return $categorias;
     }

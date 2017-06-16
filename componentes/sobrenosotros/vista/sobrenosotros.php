@@ -10,11 +10,7 @@
         include_once "../../../componentes/layout/header.php";
         error_reporting(E_ALL);
         ini_set('display_errors', '1');
-        ?>
-        <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>
-                <script src="js/respond.min.js"></script>
-        <![endif]-->       
+        ?>      
 
     </head><!--/head-->
 
@@ -25,9 +21,9 @@
                     <div class="col-sm-12 overflow">
                         <div class="social-icons pull-right">
                             <ul class="nav nav-pills">
-                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://www.facebook.com/ShoesCo-Footwear-1127750137243972/?fref=ts"><span class="sr-only">Enlace a la página de Facebook</span><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/"><span class="sr-only">Enlace a la página de Twitter</span><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://plus.google.com/about?hl=es"><span class="sr-only">Enlace a la página de Google Plus</span><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                         </div> 
                     </div>
@@ -56,14 +52,6 @@
                             <li><a href="../../../componentes/contacto/vista/contacto.php">Contacto</a></li>                          
                         </ul>
                     </div>
-                    <div class="search">
-                        <form role="form">
-                            <i class="fa fa-search"></i>
-                            <div class="field-toggle">
-                                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </header>
@@ -84,20 +72,6 @@
                 </div>
             </div>
         </section>
-        <!--/#page-breadcrumb-->
-
-    <!--<section id="about-company" class="padding-top wow fadeInUp" data-wow-duration="400ms" data-wow-delay="400ms">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <img src="images/aboutus/5.png" class="margin-bottom" alt="">
-                    <h1 class="margin-bottom">About Our Company</h1>
-                    <p>Pork chop duis eu pig, labore sausage venison. Shankle fugiat duis, filet mignon tri-tip venison beef shank ribeye<br /> aliqua cillum dolore sed do in.</p>
-                </div>
-            </div>
-        </div>
-    </section>-->
-        <!--/#about-company-->
 
         <section id="services">
             <div class="container">
@@ -105,7 +79,7 @@
                     <div class="col-sm-6 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                         <div class="single-service">
                             <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                                <img src="../../../contenido/contenidoimages/home/icon1.png" alt="Imagen alusiva a la misión de la empresa">
+                                <img src="../../../contenido/images/home/icon1.png" alt="Imagen alusiva a la misión de la empresa">
                             </div>
                             <h2>Misión</h2>
                             <p>Somos una compañía productora de calzado, que tiene como objetivo manufacturar un producto de óptima calidad, 
@@ -118,7 +92,7 @@
                     <div class="col-sm-6 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="single-service">
                             <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                                <img src="../../../contenido/contenidoimages/home/icon2.png" alt="Imagen alusiva a la visión de la empresa">
+                                <img src="../../../contenido/images/home/icon2.png" alt="Imagen alusiva a la visión de la empresa">
                             </div>
                             <h2>Visión</h2>
                             <p>Para el año 2020 nos consolidaremos como una de las compañías más reconocidas en la industria del 
@@ -127,15 +101,6 @@
                             </p>
                         </div>
                     </div>
-                    <!--<div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
-                        <div class="single-service">
-                            <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                                <img src="images/home/icon3.png" alt="">
-                            </div>
-                            <h2>Swift Page Builder</h2>
-                            <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
-                        </div>
-                    </div>-->
                 </div>
             </div>
         </section>
@@ -143,10 +108,6 @@
         <footer id="footer">
             <div class="container">
                 <div class="row">
-                    <!--<div class="col-sm-12 text-center bottom-separator">
-                        <img src="images/home/under.png" class="img-responsive inline" alt="">
-                    </div>-->
-
                     <div class="col-md-4 col-sm-6">
                         <div class="contact-info bottom">
                             <h2>Contacto</h2>
@@ -176,30 +137,21 @@
                             <h2>Declaración de conformidad</h2>
                             <p>Este sitio web cumple con el nivel de conformidad AA 
                                 de acuerdo a la declaración de la norma WCAG 2.0 de 
-                                la WAI (Web Accesibility Initiative).</p>      
+                                la WAI (Web Accesibility Initiative).</p>  
+                            <div>
+                                <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
+                                   title="Explicación del Nivel Doble-A de Conformidad">
+                                    <img height="32" width="88" 
+                                         src="http://www.w3.org/WAI/wcag1AA-blue"
+                                         alt="Icono de conformidad con el Nivel Doble-A"></a>
+                            </div>
                         </div>
-                        <!--<div class="contact-form bottom">
-                            <h2>Envía tu mensaje</h2>
-                            <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" required="required" placeholder="Nombre">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" required="required" placeholder="E-mail">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Escribe tu mensaje"></textarea>
-                                </div>                        
-                                <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-submit" value="Enviar">
-                                </div>
-                            </form>
-                        </div>-->
+                   
                     </div>
                     <div class="col-sm-12">
                         <div class="copyright-text text-center">
                             <p>&copy; Shoes & Co Footwear 2017. Derechos reservados.</p>
-                            <p>Diseñado por <a href="#">Diego Galeano, Laura Prada</a></p>
+                            <p>Desarrollado por <span>Diego Galeano, Laura Prada</span></p>
                         </div>
                     </div>
                 </div>

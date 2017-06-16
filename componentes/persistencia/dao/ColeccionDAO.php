@@ -34,7 +34,7 @@ class ColeccionDAO {
             
             $colecciones []= $coleccion;
         }
-        echo "</table></center>";
+       // echo "</table></center>";
         mysql_close($this->conexion->getLink());
         return $colecciones;
     }
