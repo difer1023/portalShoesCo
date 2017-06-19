@@ -1,15 +1,11 @@
 <?php
+header("Content-Type: text/html;charset=utf-8");
+include_once '../../persistencia/dao/ColeccionDAO.php';
 
-include_once '../../persistencia/dao/ProductoDAO.php';
+$coleccionDAO=new ColeccionDAO();
+$colecciones=$coleccionDAO->consultarTodos();
 
-$filtros=$_POST['filtros'];
-$array=  json_decode($filtros);
-
-$productoDAO=new ProductoDAO();
-$productos=$productoDAO->consultarFiltro($array);
-
-
-echo json_encode($productos);
+echo json_encode($colecciones,JSON_UNESCAPED_UNICODE);
 
 switch (json_last_error()) {
         

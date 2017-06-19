@@ -18,22 +18,19 @@ class CategoriaDAO {
 
     function __construct() {
         $this->conexion = new conexion();
+        mysql_query("SET NAMES 'utf8'");
     }
 
     public function consultarTodos() {
-        $consulta = "select * from categoria;";
+        $consulta = "select * from categoria";
         $result = mysql_query($consulta, $this->conexion->getLink());
         if (!$result) {
             die('Ocurrio un error al obtener los valores de la base de datos: ' . mysql_error());
         }
         $categorias=array();
         while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-            $categoria=new categoria();
-            $categoria->setCodigo($row['i_codigo']);
-            $categoria->setNombre($row['c_nombre']);
-            $categorias []= $categoria;
+            $categorias [] = $row;
         }
-        //echo "</table></center>";
         mysql_close($this->conexion->getLink());
         return $categorias;
     }

@@ -111,8 +111,8 @@
                         <img src="images/home/under.png" class="img-responsive inline" alt="">
                     </div>-->
 
-                    <div class="col-md-4 col-sm-6"> 
-                        <div class="contact-info bottom"> 
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact-info bottom informacion-footer">
                             <h2>Contacto</h2>
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
@@ -124,23 +124,23 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom informacion-footer">
 
                             <h2>Dirección</h2>
                             <address>
                                 Cra 24G # 20-04 sur <br> 
                                 Barrio Restrepo <br> 
                                 Bogotá, D.C. <br> 
-                                Colombia <br> 
+                                Colombia 
                             </address>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom informacion-footer">
                             <h2>Declaración de conformidad</h2>
                             <p>Este sitio web cumple con el nivel de conformidad AA 
                                 de acuerdo a la declaración de la norma WCAG 2.0 de 
-                                la WAI (Web Accesibility Initiative).</p>  
+                                la WAI (Web Accesibility Initiative).</p> 
                             <div>
                                 <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
                                    title="Explicación del Nivel Doble-A de Conformidad">
@@ -149,7 +149,6 @@
                                          alt="Icono de conformidad con el Nivel Doble-A"></a>
                             </div>
                         </div>
-                       
                     </div>
                     <div class="col-sm-12">
                         <div class="copyright-text text-center">

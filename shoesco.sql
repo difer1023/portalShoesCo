@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-02-2017 a las 03:58:30
+-- Tiempo de generación: 18-06-2017 a las 19:23:44
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -48,9 +48,9 @@ INSERT INTO `categoria` (`i_codigo`, `c_nombre`) VALUES
 
 CREATE TABLE `coleccion` (
   `i_codigo` int(11) NOT NULL,
-  `c_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `c_nombre` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `f_creacion` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `coleccion`
@@ -76,16 +76,17 @@ CREATE TABLE `producto` (
   `a_descontinuado` tinyint(1) NOT NULL,
   `i_coleccion` int(11) NOT NULL,
   `i_tipo` int(11) NOT NULL,
-  `c_ruta_imagen` varchar(250) COLLATE utf8_spanish_ci NOT NULL
+  `c_ruta_imagen` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
+  `c_desc_imagen` varchar(250) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`i_codigo`, `c_nombre`, `c_descripcion`, `f_creacion`, `a_descontinuado`, `i_coleccion`, `i_tipo`, `c_ruta_imagen`) VALUES
-(1, 'Botin bajo rojo', 'Botiin que sirve para lucir', '2017-02-08', 0, 1, 1, 'imagenesProductos/20.jpg'),
-(2, 'Botin azul', 'botin para lucir con saco azul', '2017-02-09', 0, 1, 1, 'imagenesProductos/22.jpg');
+INSERT INTO `producto` (`i_codigo`, `c_nombre`, `c_descripcion`, `f_creacion`, `a_descontinuado`, `i_coleccion`, `i_tipo`, `c_ruta_imagen`, `c_desc_imagen`) VALUES
+(1, 'Botin bajo rojo', 'Botiin que sirve para lucir', '2017-02-08', 0, 1, 1, 'imagenesProductos/20.jpg', 'Botin de color rojo con fondo blanco'),
+(2, 'Botin azul', 'botin para lucir con saco azul', '2017-02-09', 0, 1, 1, 'imagenesProductos/22.jpg', 'Foto de botin azul con fondo blanco');
 
 --
 -- Índices para tablas volcadas
@@ -117,12 +118,12 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `coleccion`
 --
 ALTER TABLE `coleccion`
-  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --

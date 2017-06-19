@@ -8,10 +8,6 @@ and open the template in the editor.
     Author     : Difer
 */
 
-.slider-hill{
-    width: 40%;
-}
-
 #home-slider-right {
     background: url(../images/home/slider-bg.png) 0 100% repeat-x;
     position: relative;
@@ -25,14 +21,15 @@ and open the template in the editor.
 #home-slider-right .slide-text{
     position: absolute;
     top: 50px;
-    left: 700px;
+    left: 56%;
     width: 450px;
 }
 
 #home-slider-right .slider-hill {
     position: absolute;
-    right: 700px;
+    right: 50%;
     bottom: 0;
+    width: 50%;
 }
 #home-slider-right .slider-house {
     position: absolute;
@@ -83,22 +80,81 @@ and open the template in the editor.
     }
 
     #home-slider-right .main-slider {
-        height: 500px;
+        height: 250px;
     }
 
     #home-slider-right .slide-text {
         top: -69px;
-        width: 100%;
-        text-align: center;
-        left: 0px;
+        width: 50%;
+        left: 50%;
     }
 
 
     #home-slider-right .slider-hill {
-        right: 50%;
-        margin-right: -200px;
-        width: 102%;
+        right: 51%;
+        width: 50%;
 
     }
 
 }
+
+@media only screen and (max-width : 769px) {
+    
+    #footer{
+        padding-top:0px;
+    }
+
+    #home-slider .main-slider {
+        height: 28em;
+        background: white;
+    }
+    
+    #home-slider-right h1{
+        margin-top: 0;
+    }
+
+    #home-slider-right {
+        margin: 50px 20px;
+    }
+
+    #home-slider-right .main-slider {
+        height: 392px;
+    }
+
+    #home-slider-right .slide-text {
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+
+
+    #home-slider-right .slider-hill {
+        width:100%;
+        right: 0px;
+        margin-right: 0%;
+    }
+
+    #home-slider-right .slider-house {
+        right: 50%;
+        margin-right: -125px;
+    }
+
+    #home-slider-right .slider-sun {
+        right: 50%;
+        margin-right: 60px;
+    }
+
+    #home-slider-right .slider-birds1 {
+        width: 70px;
+        right: 50%;
+        margin-right: 120px;
+    }
+
+    #home-slider-right .slider-birds2 {
+        width: 70px;
+        right: 50%;
+        margin-right: -200px;
+    }
+}
+
+

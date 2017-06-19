@@ -18,6 +18,7 @@ class ProductoDAO {
 
     function __construct() {
         $this->conexion = new conexion();
+        mysql_query("SET NAMES 'utf8'");
     }
 
     public function consultarTodos() {
@@ -33,7 +34,6 @@ class ProductoDAO {
             $producto->setNombre($row['c_nombre']);
             $producto->setDescripcion($row['c_descripcion']);
             $producto->setRutaImagen($row['c_ruta_imagen']);
-            print_r($producto->getCodigo());
             $productos [] = $producto;
         }
         mysql_close($this->conexion->getLink());

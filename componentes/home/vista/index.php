@@ -55,13 +55,13 @@
             </div>
         </header>
         <!--/#header-->
-        <div class="row">
+        
             <section id="home-slider">
                 <div class="container">
                     <div class="row">
                         <div class="main-slider">
-                            <div class="slide-text">
-                                <h1>El arte de hacer calzado</h1>
+                            <div class="slide-text" >
+                                <h1 tabindex="1">El arte de hacer calzado</h1>
                                 <p>Nuestro producto tiene el sello especial de la mano de nuestros artesanos, que siempre piensan en la comodidad y la calidad que ofrecemos a nuestros clientes.</p>
                                 <!--<a href="#" class="btn btn-common">Suscríbete</a>-->
                             </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
             </section>
-        </div>
+        
         <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -99,35 +99,35 @@
                     </div>-->
 
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom informacion-footer">
                             <h2>Contacto</h2>
                             <address>
                                 E-mail: <a href="mailto:shoesco.footwear@gmail.com"
                                            >shoesco.footwear@gmail.com</a> <br> 
-                                Teléfono: +57 (031) 551 72 53 <br>
+                                Teléfono: +57 (031) 551 72 53 <br> 
                             </address>
 
 
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom informacion-footer">
 
                             <h2>Dirección</h2>
                             <address>
                                 Cra 24G # 20-04 sur <br> 
                                 Barrio Restrepo <br> 
                                 Bogotá, D.C. <br> 
-                                Colombia <br> 
+                                Colombia 
                             </address>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6">
-                        <div class="contact-info bottom">
+                        <div class="contact-info bottom informacion-footer">
                             <h2>Declaración de conformidad</h2>
                             <p>Este sitio web cumple con el nivel de conformidad AA 
                                 de acuerdo a la declaración de la norma WCAG 2.0 de 
-                                la WAI (Web Accesibility Initiative).</p>   
+                                la WAI (Web Accesibility Initiative).</p> 
                             <div>
                                 <a href="http://www.w3.org/WAI/WCAG1AA-Conformance"
                                    title="Explicación del Nivel Doble-A de Conformidad">
@@ -136,7 +136,6 @@
                                          alt="Icono de conformidad con el Nivel Doble-A"></a>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-sm-12">
                         <div class="copyright-text text-center">

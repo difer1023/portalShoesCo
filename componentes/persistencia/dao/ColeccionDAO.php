@@ -18,23 +18,20 @@ class ColeccionDAO {
 
     function __construct() {
         $this->conexion = new conexion();
+        mysql_query("SET NAMES 'utf8'");
     }
 
     public function consultarTodos() {
-        $consulta = "select * from coleccion;";
+        $consulta = "select * from coleccion";
         $result = mysql_query($consulta, $this->conexion->getLink());
         if (!$result) {
             die('Ocurrio un error al obtener los valores de la base de datos: ' . mysql_error());
         }
         $colecciones=array();
         while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-            $coleccion=new coleccion();
-            $coleccion->setCodigo($row['i_codigo']);
-            $coleccion->setNombre($row['c_nombre']);
-            
-            $colecciones []= $coleccion;
+            $colecciones [] = $row;
         }
-       // echo "</table></center>";
+
         mysql_close($this->conexion->getLink());
         return $colecciones;
     }
