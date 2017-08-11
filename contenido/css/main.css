@@ -15,8 +15,8 @@
     background: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1.65em;
+    line-height: 2em;
     color: #000;
   }
 
@@ -293,7 +293,7 @@
 #header .navbar-inverse .navbar-nav  li.active > a:focus, 
 #header .navbar-nav.navbar-right li > a:hover,
 .navbar-inverse .navbar-nav > .open > a {
-  background-color: inherit;
+  background-color: #FFFFFF;
   border: 0;
   color: #b40707;
 }
@@ -417,6 +417,7 @@ ul.sub-menu {
 .bottom > h2 {
   margin-top: 0;
   margin-bottom: 26px;
+  font-size: 1.6em;
 }
 
 .bottom .media-body h3 {
@@ -481,7 +482,7 @@ ul.sub-menu {
 
 .bottom > address {
   line-height: 22px;
- 
+  font-size: 1em;
 }
 
 .form-control {
@@ -525,7 +526,7 @@ ul.sub-menu {
 .copyright-text{
   margin-top: 70px;
   color: #333;
-  font-size: 16px;  
+  font-size: 1em;  
   padding-bottom: 15px;
 }
 
@@ -2746,3 +2747,35 @@ span.stButton_gradient,
     border: silver 10px solid;
     border-image: url(../images/borde-footer.png) 8 round stretch;
 }
+
+.sr-only {
+    color:black;
+    font-size: 1em;
+}
+
+p{
+    font-size: 1em;
+}
+
+title{
+    font-size: 1em;
+}
+
+.skiplink{
+    padding:1em;
+    background-color: #b40707;
+    text-decoration:none;
+    border-radius: 0 0 1em 0;
+}
+
+.skiplink span{
+    text-decoration:none;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    text-decoration:none;
+    color:#ffffff;
+}
+
+
