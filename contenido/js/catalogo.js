@@ -9,7 +9,7 @@
 
 $(document).ready(function () {
 
-
+    var numeroColecciones=0;
     $.ajax({
         type: "POST",
         url: "../controladores/CtrlColecciones.php",
@@ -17,6 +17,7 @@ $(document).ready(function () {
     })
             .done(function (data) {
                 var colecciones = $.parseJSON(data);
+                numeroColecciones=colecciones.length+1;
                 html = '';
                 for (i = 0; i < colecciones.length; i++) {
 
@@ -30,7 +31,7 @@ $(document).ready(function () {
                 $('#colecciones').html(html);
             })
             .fail(function () {
-                alert('Error al cargar productos.');
+                alert('Error al cargar colecciones.');
             });
 
     $.ajax({
@@ -45,8 +46,8 @@ $(document).ready(function () {
                 for (i = 0; i < categorias.length; i++) {
                     html += '<div class="form-control">'
                             + '<div class="filtro">'
-                            + '<input class="filter-checkboxes" type="checkbox" id="checkbox' + i + '" name="tipo" value="' + categorias[i].i_codigo + '"/>'
-                            + '<label for="checkbox' + i + '" id="cb1">' + categorias[i].c_nombre + '</label>'
+                            + '<input class="filter-checkboxes" type="checkbox" id="checkbox' + numeroColecciones+i + '" name="tipo" value="' + categorias[i].i_codigo + '"/>'
+                            + '<label for="checkbox' + numeroColecciones+i + '" id="cb1">' + categorias[i].c_nombre + '</label>'
                             + '</div></div>';
 
                 }
@@ -54,7 +55,7 @@ $(document).ready(function () {
                 $('#categorias').html(html);
             })
             .fail(function () {
-                alert('Error al cargar productos.');
+                alert('Error al cargar categorias.');
             });
 
 
@@ -82,7 +83,9 @@ $(document).ready(function () {
                                 + '</div>';
 
                 }
-
+                if(productos.length===0){
+                    html+='<span class="glyphicon glyphicon-exclamation-sign" alt="Signo de exclamacion"></span><span class="">No existen productos con el criterio de busqueda seleccionado</span>';
+                }
                 $('#divProductos').html(html);
             })
             .fail(function () {
@@ -128,7 +131,9 @@ $(document).ready(function () {
                                 + '</div>';
 
                     }
-
+                    if(productos.length===0){
+                        html+='<span class="glyphicon glyphicon-exclamation-sign" alt="Signo de exclamacion"></span><span class="">No existen productos con el criterio de busqueda seleccionado</span>';
+                    }
                     $('#divProductos').html(html);
                 })
                 .fail(function () {
