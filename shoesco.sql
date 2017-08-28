@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2017 a las 19:23:44
+-- Tiempo de generación: 28-08-2017 a las 00:25:12
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -31,15 +31,6 @@ CREATE TABLE `categoria` (
   `c_nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
---
--- Volcado de datos para la tabla `categoria`
---
-
-INSERT INTO `categoria` (`i_codigo`, `c_nombre`) VALUES
-(1, 'Bota'),
-(2, 'Botin'),
-(3, 'Zapato');
-
 -- --------------------------------------------------------
 
 --
@@ -52,16 +43,6 @@ CREATE TABLE `coleccion` (
   `f_creacion` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Volcado de datos para la tabla `coleccion`
---
-
-INSERT INTO `coleccion` (`i_codigo`, `c_nombre`, `f_creacion`) VALUES
-(1, 'Primavera', NULL),
-(2, 'Verano', NULL),
-(3, 'Otoño', NULL),
-(4, 'Invierno', NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -70,23 +51,16 @@ INSERT INTO `coleccion` (`i_codigo`, `c_nombre`, `f_creacion`) VALUES
 
 CREATE TABLE `producto` (
   `i_codigo` int(11) NOT NULL,
-  `c_nombre` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
-  `c_descripcion` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
+  `c_nombre` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `c_descripcion` varchar(250) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
   `f_creacion` date DEFAULT NULL,
   `a_descontinuado` tinyint(1) NOT NULL,
   `i_coleccion` int(11) NOT NULL,
   `i_tipo` int(11) NOT NULL,
-  `c_ruta_imagen` varchar(250) COLLATE utf8_spanish_ci NOT NULL,
-  `c_desc_imagen` varchar(250) COLLATE utf8_spanish_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
-
---
--- Volcado de datos para la tabla `producto`
---
-
-INSERT INTO `producto` (`i_codigo`, `c_nombre`, `c_descripcion`, `f_creacion`, `a_descontinuado`, `i_coleccion`, `i_tipo`, `c_ruta_imagen`, `c_desc_imagen`) VALUES
-(1, 'Botin bajo rojo', 'Botiin que sirve para lucir', '2017-02-08', 0, 1, 1, 'imagenesProductos/20.jpg', 'Botin de color rojo con fondo blanco'),
-(2, 'Botin azul', 'botin para lucir con saco azul', '2017-02-09', 0, 1, 1, 'imagenesProductos/22.jpg', 'Foto de botin azul con fondo blanco');
+  `c_ruta_imagen` mediumblob NOT NULL,
+  `c_tipo_imagen` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `c_desc_imagen` varchar(250) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Índices para tablas volcadas
@@ -118,17 +92,17 @@ ALTER TABLE `producto`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `coleccion`
 --
 ALTER TABLE `coleccion`
-  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `i_codigo` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

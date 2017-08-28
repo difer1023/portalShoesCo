@@ -34,5 +34,29 @@ class CategoriaDAO {
         mysql_close($this->conexion->getLink());
         return $categorias;
     }
+    
+    public function insertar($nombre) {
+        $consulta = "insert into categoria(c_nombre) values('".$nombre."')";
+        $result = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al insertar el registro: ' . mysql_error().$consulta);
+        }
+        mysql_close($this->conexion->getLink());
+    }
+    
+    public function eliminar($codigo) {
+        $consulta = "delete from producto where i_tipo='".$codigo."'";
+        $result = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al elminar el registro: ' . mysql_error().$consulta);
+        }else{
+        $consulta = "delete from categoria where i_codigo='".$codigo."'";
+        $result1 = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result1) {
+            die('Ocurrio un error al eliminar el registro: ' . mysql_error().$consulta);
+        }
+        }
+        mysql_close($this->conexion->getLink());
+    }
     //put your code here
 }

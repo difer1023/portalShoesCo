@@ -74,7 +74,7 @@ $(document).ready(function () {
                 for (i = 0; i < productos.length; i++) {
                     html += '<div class="col-sm-4 col-lg-4 col-md-4">'
                                 + '<div class="thumbnail">'
-                                + '<img src="../../../contenido/' + productos[i].c_ruta_imagen + '" alt="'+productos[i].c_desc_imagen+'">'
+                                + '<img src="'+ productos[i].c_ruta_imagen + '" alt="'+productos[i].c_desc_imagen+'">'
                                 + '<div class="caption">'
                                 + '<h4>' + productos[i].c_nombre + '</h4>'
                                 + '<p>' + productos[i].c_descripcion + '.</p>'
@@ -122,7 +122,7 @@ $(document).ready(function () {
                     for (i = 0; i < productos.length; i++) {
                         html += '<div class="col-sm-4 col-lg-4 col-md-4">'
                                 + '<div class="thumbnail">'
-                                + '<img src="../../../contenido/' + productos[i].c_ruta_imagen + '">'
+                                + '<img src="'+ productos[i].c_ruta_imagen + '" alt="'+productos[i].c_desc_imagen+'">'
                                 + '<div class="caption">'
                                 + '<h4>' + productos[i].c_nombre + '</h4>'
                                 + '<p>' + productos[i].c_descripcion + '.</p>'

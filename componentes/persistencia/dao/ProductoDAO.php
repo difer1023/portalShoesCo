@@ -96,6 +96,79 @@ class ProductoDAO {
         mysql_close($this->conexion->getLink());
         return $productos;
     }
+    
+    public function insertar($array) {
+        $hoy = date("Y-m-d");
+        $sentencia = "insert into producto (c_nombre,c_descripcion,f_creacion,a_descontinuado,i_coleccion,i_tipo,c_ruta_imagen,c_tipo_imagen,c_desc_imagen) values(";
+        $sentencia.="'".$array->nombre."',";
+        $sentencia.="'".$array->descripcion."',";
+        $sentencia.="'".$hoy."',";
+        $sentencia.="0".",";
+        $sentencia.=$array->coleccion.",";
+        $sentencia.=$array->categoria.",";
+        $sentencia.="'".$array->rutaImagen."',";
+        $sentencia.="'".$array->tipoImagen."',";
+        $sentencia.="'".$array->descripcionImagen."'";
+        $sentencia.=")";
+       
+        $result = mysql_query($sentencia, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al obtener los valores de la base de datos: ' . mysql_error());
+        }
+        $productos = array();
+        while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            
+            $productos [] = $row;
+        }
 
+        mysql_close($this->conexion->getLink());
+        return $productos;
+    }
+    
+    public function modificar($array) {
+        $hoy = date("Y-m-d");
+        $sentencia = "update producto set ";
+        $sentencia.="c_nombre='".$array->nombre."',";
+        $sentencia.="c_descripcion='".$array->descripcion."',";
+        $sentencia.="i_coleccion=".$array->coleccion.",";
+        $sentencia.="i_tipo=".$array->categoria.",";
+        $sentencia.="c_ruta_imagen='".$array->rutaImagen."',";
+        $sentencia.="c_tipo_imagen='".$array->tipoImagen."',";
+        $sentencia.="c_desc_imagen='".$array->descripcionImagen."' ";
+        $sentencia.="where i_codigo='".$array->codigoProducto."'";
+        
+        
+        $result = mysql_query($sentencia, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al obtener los valores de la base de datos: ' . mysql_error());
+        }
+        $productos = array();
+        while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            
+            $productos [] = $row;
+        }
+
+        mysql_close($this->conexion->getLink());
+        return $productos;
+    }
+    
+    public function eliminar($array) {
+        $sentencia = "delete from producto ";
+        $sentencia.="where i_codigo='".$array->codigoProducto."'";
+        
+        
+        $result = mysql_query($sentencia, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al eliminar el producto: ' . mysql_error());
+        }
+        $productos = array();
+        while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+            
+            $productos [] = $row;
+        }
+
+        mysql_close($this->conexion->getLink());
+        return $productos;
+    }
     //put your code here
 }

@@ -35,5 +35,29 @@ class ColeccionDAO {
         mysql_close($this->conexion->getLink());
         return $colecciones;
     }
+    
+    public function insertar($nombre) {
+        $consulta = "insert into coleccion(c_nombre) values('".$nombre."')";
+        $result = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al insertar el registro: ' . mysql_error().$consulta);
+        }
+        mysql_close($this->conexion->getLink());
+    }
+    
+    public function eliminar($codigo) {
+        $consulta = "delete from producto where i_coleccion='".$codigo."'";
+        $result = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result) {
+            die('Ocurrio un error al elminar el registro: ' . mysql_error().$consulta);
+        }else{
+        $consulta = "delete from coleccion where i_codigo='".$codigo."'";
+        $result1 = mysql_query($consulta, $this->conexion->getLink());
+        if (!$result1) {
+            die('Ocurrio un error al eliminar el registro: ' . mysql_error().$consulta);
+        }
+        }
+        mysql_close($this->conexion->getLink());
+    }
     //put your code here
 }

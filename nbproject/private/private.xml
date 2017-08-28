@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/contenido/js/admin/admin-catalogo.js</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/vista/adminCatalogo.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/controladores/CtrlColecciones.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/persistencia/dao/ColeccionDAO.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/persistencia/dao/conexion.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/controladores/CtrlCategorias.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/contenido/js/catalogo.js</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/persistencia/dao/CategoriaDAO.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/persistencia/dao/ProductoDAO.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/vista/home.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/vista/login.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/admin/controladores/CtrlProductos.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/componentes/catalogo/vista/catalogo.php</file>
+            <file>file:/C:/xampp/htdocs/portalShoesCo/contenido/js/admin/image-preview.js</file>
+        </group>
     </open-files>
 </project-private>
